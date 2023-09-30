@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="Module.js"></script>
+</head>
+<body ng-controller="myController">
+    
+    <!-- <input type="button" value="click" ng-click="number = number + 1"> -->
+    <!-- <input type="button" value="click" ng-click="myFunction()"> -->
+    <!-- <input type="button" value="click" ng-mousedown ="myFunction()"> -->
+    <!-- <input type="button" value="click" ng-mouseup ="myFunction()"> -->
+    <!-- <input type="button" value="click" ng-dblclick ="myFunction()"> -->
+
+    <!-- <input type="button" value="click" ng-mouseover ="myFunction()"> -->
+    <!-- <input type="button" value="click" ng-mouseenter ="myFunction()"> -->
+    <!-- <input type="button" value="click" ng-mousemove ="myFunction()"> -->
+    <!-- <input type="button" value="click" ng-mouseleave ="myFunction()"> -->
+
+    <!-- <input type="text" ng-focus="myFunction()"> -->
+    <!-- <input type="text" ng-blur ="myFunction()"> -->
+
+    
+    <!-- KeyBoard Events -->
+    <!-- <input type="text" ng-keydown ="myFunction()"> -->
+    <!-- <input type="text" ng-keypress ="myFunction()"> -->
+    <!-- <input type="text" ng-keyup ="myFunction()"> -->
+
+    <!-- Copy Paste Events -->
+    <!-- <input type="text" ng-copy ="myFunction()"> -->
+    <!-- <input type="text" ng-cut ="myFunction()"> -->
+    <input type="text" ng-paste ="myFunction()">
+     <br><br>
+     <h2>{{ number }}</h2>
+</body>
+</html>

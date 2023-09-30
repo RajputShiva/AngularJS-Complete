@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="Module.js"></script>
+</head>
+<body ng-controller="myController">
+
+    <!-- <input type="text" placeholder="Enter a fruit" ng-model="search"> -->
+
+    <ul>
+        <!-- <li ng-repeat="item in fruits | filter:'Apple'">
+            {{ item }}
+        </li> -->
+
+        <!-- <li ng-repeat="item in fruits | filter:'Mango'">
+            {{ item }}
+        </li> -->
+
+        <!-- <li ng-repeat="item in fruits | filter:'g'">
+            {{ item }}
+        </li> -->
+
+        <!-- <li ng-repeat="item in fruits | filter:search">
+            {{ item }}
+        </li> -->
+    </ul>
+
+    <br>
+
+    <!-- <table border="1">
+        <tr>
+            <th>NAME</th>
+            <th>GENDER</th>
+            <th>CLASS</th>
+        </tr> -->
+        <!-- individual filter aise lgta hain -->
+        <!-- <tr ng-repeat="item in students | filter:'shivaji'">
+            <td>{{ item.name }}</td>
+            <td>{{ item.gender }}</td>
+            <td>{{ item.class }}</td>
+        </tr>
+    </table> -->
+
+    <input type="text" placeholder="Enter Student Name" ng-model="search">
+    <input type="text" placeholder="Enter Student Gender" ng-model="gender">
+
+    <br><br><br>
+
+    <table border="1">
+        <tr>
+            <th>NAME</th>
+            <th>GENDER</th>
+            <th>CLASS</th>
+        </tr>
+        <!-- ek sath filter aise lgta hain -->
+        <!-- <tr ng-repeat="item in students | filter:search">
+            <td>{{ item.name }}</td>
+            <td>{{ item.gender }}</td>
+            <td>{{ item.class }}</td>
+        </tr> -->
+
+        <!-- hum object likh ke bhi filter kr skte hain -->
+        <!-- <tr ng-repeat="item in students | filter:{'name':'s','gender':'Male'}">
+            <td>{{ item.name }}</td>
+            <td>{{ item.gender }}</td>
+            <td>{{ item.class }}</td>
+        </tr> -->
+
+        <!-- <tr ng-repeat="item in students | filter:{'name':search,'gender':gender}">
+            <td>{{ item.name }}</td>
+            <td>{{ item.gender }}</td>
+            <td>{{ item.class }}</td>
+        </tr> -->
+
+        <!-- strict check krte h mtlb jo me search kru wali show ho -->
+        <tr ng-repeat="item in students | filter:search:true">
+            <td>{{ item.name }}</td>
+            <td>{{ item.gender }}</td>
+            <td>{{ item.class }}</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="Module.js"></script>
+</head>
+<body ng-controller="myController">
+    
+    <ul>
+        <!-- here first ng-repeat for iteration and then using orderBy for sorting in ascending order -->
+        <!-- <li ng-repeat="item in names | orderBy">
+            {{ item }}
+        </li> -->
+
+        <!-- using orderBy:'-' for sorting in descending order -->
+        <!-- <li ng-repeat="item in names | orderBy:'-'">
+            {{ item }}
+        </li> -->
+    </ul>
+
+    <!-- <table border="1">
+        <tr>
+            <th>NAME</th>
+            <th>CITY</th>
+            <th>AGE</th>
+        </tr> -->
+
+        <!-- name ke according ascending order -->
+        <!-- <tr ng-repeat="emp in employees | orderBy:'name'">
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.city }}</td>
+            <td>{{ emp.age  }}</td>
+        </tr> -->
+
+        <!-- name ke according descending order -->
+        <!-- <tr ng-repeat="emp in employees | orderBy:'name':'reverse'">
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.city }}</td>
+            <td>{{ emp.age  }}</td>
+        </tr> -->
+
+        <!-- city ke according ascending order -->
+        <!-- <tr ng-repeat="emp in employees | orderBy:'city'">
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.city }}</td>
+            <td>{{ emp.age  }}</td>
+        </tr> -->
+
+        <!-- city ke according descending order -->
+        <!-- <tr ng-repeat="emp in employees | orderBy:'city':'reverse'">
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.city }}</td>
+            <td>{{ emp.age  }}</td>
+        </tr>
+    </table> -->
+
+    <table border="1">
+        <tr>
+            <th ng-click="myFunction('name')">NAME</th>
+            <th ng-click="myFunction('city')">CITY</th>
+            <th ng-click="myFunction('age')">AGE</th>
+        </tr>
+        
+        <tr ng-repeat="emp in employees | orderBy:shivaji">
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.city }}</td>
+            <td>{{ emp.age  }}</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="Module.js"></script>
+</head>
+<body ng-controller="myController">
+
+    <!-- <input type="text" placeholder="Enter a number" ng-model="number">
+    
+    <br>
+
+    <ul>
+        <li ng-repeat="item in fruits">
+            {{ item }}
+        </li>
+
+        <br><br> -->
+
+        <!-- starting se limit kaise lagaye -->
+        <!-- <li ng-repeat="item in fruits | limitTo:3">
+            {{ item }}
+        </li> -->
+
+        <!-- last se limit kaise lagaye -->
+        <!-- <li ng-repeat="item in fruits | limitTo:-3">
+            {{ item }}
+        </li> -->
+
+        <!-- limitTo:3:2 iska mtlb ye h ki teen value return kro but starting ke 2 index se start krke do -->
+        <!-- <li ng-repeat="item in fruits | limitTo:3:2">
+            {{ item }}
+        </li> -->
+
+        <!-- value input se lenge -->
+        <!-- <li ng-repeat="item in fruits | limitTo:number">
+            {{ item }}
+        </li>
+    </ul>
+
+    <br> -->
+
+<!-- <table border="1">
+    <tr>
+        <th>NAME</th>
+        <th>GENDER</th>
+        <th>CLASS</th>
+    </tr>
+    <tr ng-repeat="item in students">
+        <td>{{ item.name }}</td>
+        <td>{{ item.gender }}</td>
+        <td>{{ item.class }}</td>
+    </tr>
+</table> -->
+
+    <!-- <br><br> -->
+
+<!-- <table border="1">
+    <tr>
+        <th>NAME</th>
+        <th>GENDER</th>
+        <th>CLASS</th>
+    </tr> -->
+
+    <!-- array of object me bhi limitTo lga skte hain -->
+    <!-- <tr ng-repeat="item in students | limitTo:2">
+        <td>{{ item.name }}</td>
+        <td>{{ item.gender }}</td>
+        <td>{{ item.class }}</td>
+    </tr> -->
+
+    <!-- <tr ng-repeat="item in students | limitTo:-2">
+        <td>{{ item.name }}</td>
+        <td>{{ item.gender }}</td>
+        <td>{{ item.class }}</td>
+    </tr> -->
+
+    <!-- limitTo:2:2 iska mtlb ye h ki teen value return kro but starting ke 2 index se start krke do -->
+    <!-- <tr ng-repeat="item in students | limitTo:2:2">
+        <td>{{ item.name }}</td>
+        <td>{{ item.gender }}</td>
+        <td>{{ item.class }}</td>
+    </tr> -->
+
+     <!-- value input se lenge -->
+    <!-- <tr ng-repeat="item in students | limitTo:number">
+        <td>{{ item.name }}</td>
+        <td>{{ item.gender }}</td>
+        <td>{{ item.class }}</td>
+    </tr>
+</table> -->
+
+<!-- hum limitTo string ke sth bhi use kr skte hain -->
+<h1>{{ name }}</h1>
+<h1>{{ name | limitTo:3 }}</h1>
+<h1>{{ name | limitTo:3:2 }}</h1>
+
+<h2>{{ num }}</h2>
+<h2>{{ num | limitTo:4 }}</h2>
+<h2>{{ num | limitTo:4:2 }}</h2>
+
+</body>
+</html>

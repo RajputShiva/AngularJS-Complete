@@ -1,0 +1,418 @@
+AngularJs:-
+AngularJS is a JavaScript framework. It can be added to an HTML page with a <script> tag.
+AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions.
+
+AngularJS is a JavaScript Framework
+AngularJS is a JavaScript framework written in JavaScript.
+
+AngularJS is distributed as a JavaScript file, and can be added to a web page with a script tag:
+
+AngularJS Extends HTML
+AngularJS extends HTML with ng-directives.
+The ng-app directive defines an AngularJS application.
+The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+The ng-bind directive binds application data to the HTML view.
+
+AngularJS Expressions
+AngularJS expressions are written inside double braces: {{ expression }}.
+AngularJS will "output" data exactly where the expression is written:
+
+-> AngularJS totally freeb& oprn source.
+-> developed by google.
+-> it is use to create single page web application with MVC.
+-> it is a JavaScript framework. its library written in JS.
+-> AngularJS start <script> tag.
+-> when you show ng-*. that neans its creates in AngularJS.
+-> it is expression written in {{}} double brackets.
+-> AngularJS provide direct output without refresh tha webpage. (we can call it Data Binding).
+-> basic knowledge of JavaScript & jQuery.
+
+-> AngularJS is a JavaScript framework that is used to build browser based Web application.
+-> it is an open source project, which means it can be freely used, changed and shared by anyone.
+-> it is useful in building single-apge Web application to load varing content dynamically based on user actions.
+-> AngularJS provides developers an options to write client side applications using JavaScript in a clean Model View Controller (MVC) way.
+-> Applications written in AngularJS are cross-browser compliant. AngularJS automatically handles JavaScript code suitable for each browser.
+
+-> it is written in JavaScript with a reduced jQuery library called jQuery lite.
+-> it is very useful for Single Page Application (SPA).
+-> it was originally developed in 2009/2010 by Misko Hevery and Adam Abrons. It is now maintained by Google.
+
+-> The objective of AngularJS is to providea framework that makes it easy to implement well-designed and well-structured Web pages and applications.
+-> AngularJS makes Web application and the code very simple to write, test, and maintain.
+
+Why do we Choose AngularJS:-
+Some of the reasons:
+-> It makes us implement MVC and makes it easy to correctly implement MVC.
+-> It provides simple and flexible filters that help us to easily format data
+-> AngularJS applications use less code than traditional JavaScript applications.
+-> AngularJS applications need less Document Object Model (DOM) manipulation.
+
+Core Features:-
+The core features of AngularJS are as follow-
+-> MVC
+-> Data-binding
+-> Scope
+-> Controller
+-> Services
+-> Filters
+-> Directives it means attributes
+-> Templates
+-> Routing
+-> Dependency Injection etc
+
+Directives in AngularJS:-
+-> AngularJS lets you extend HTML eith new attributes called Directives.
+-> AngularJS has a set of built-in directives which offers functionality to your applications.
+-> AngularJS also lets you define your own directives.
+-> AngularJS directives are extended HTML attributes with the prefix ng-*.
+-> The ng-app directive initializes or starts an AngularJS application
+
+Expressions in AngularJS:-
+-> AngularJS start <script> tag.
+-> when you show ng-*. that neans its creates in AngularJS.
+-> it is expression written in {{}} double brackets.
+-> AngularJS provide direct output without refresh tha webpage. (we can call it Data Binding).
+-> AngularJS expression is similar to JavaScript code snippets.
+-> It works with numbers and strings.
+    - {{5+6}}
+    - {{"Hello Student!"}}
+
+-> It can also work with JavaScript objects and arrays.
+    - {{user.name}}
+    - {{items[index]}}
+
+-> You can write expressions wherever you like, AngularJS will simply resolve the expression and return the result.
+
+AngularJS Expressions vs JavaScript Expressions:-
+-> Like JavaScript expressions, AngularJS expressions can contain literals, operators, and variables.
+-> Unlike JavaScript expressions, AngularJS expressions can be written inside HTML.
+-> AngularJS expressions do not support conditionals, loops, and exceptions, while JavaScript expressions do.
+-> AngularJS expressions support filters, while JavaScript expressions do not.
+
+NG-MODEL DIRECTIVE:-
+-> With the ng-model directive you can bind the value of the an input field to a variable created in AngularJS.
+-> The ng-model directive binds the value of HTML controls (input,select,textarea) to application data.
+-> The ng-bind directive tells AngularJS to replace the content of an HTML element with the value of a given variable, or expression.
+
+NG-INIT DIRECTIVE:-
+-> init means initialize
+-> The ng-init directive initializes application data like variables, arrays, objects, array of objects etc.
+-> It defines the initial value for an AngularJS application and assigns values to the variables.
+
+MVC:-
+MVC stands for-
+-> M - Model - Contains Application Data or Model is responsible for maintaining data
+-> V - View  - Contains Presentation Logic or View is responsible for displaying data to the user
+-> C - Controller - Creates communication path between Model and View or Controller, controls the intercation between Model and View.
+
+MVC Concepts:-
+MVC Architechture Pattern:-
+-> AngularJS supports MVC architechture in software development.
+-> The Model holds the data and logic, the View holds the visual layout and presentation, while the Controller coordinates the Model and View.
+
+MODULES:-
+-> It is a container used to hold other parts of an application.
+-> It has the option to define its own controllers, Services, filter, directives, and so on.
+
+CONTROLLERS:-
+-> AngularJS applications depend on controllers to control the flow of data in the application.
+-> We add "myController" to the app using the app.controller() method.
+    app.controller("myController(you can write any name here)", function(&scope) {
+        $scope.name = "";
+    });
+-> Controller are JavaScript objects which have properties and functions.
+-> We use a controller in an application by using "ng-controller" directive.
+
+-> Responsibilities of controllers
+-> Making available Data to UI
+-> Managing presentation
+-> Handling user inputs
+-> Processing data
+
+Data Binding:-
+objectives:-
+-> What is Data Binding
+-> Types of Data-Binding
+
+What is Data Binding:-
+-> Data binding is a process of combining data between the model and the view.
+
+Types of Data-Binding:-
+-> 1. One way Data-Binding
+-> 2. Two way Data-Binding
+
+One way Data-Binding:-
+-> One way data binding in AngularJS means binding data from Model to view.
+-> In one way data-binding data flows from the scope/controller to the view.
+-> "ng-bind" is an angular directive used for achieving one-way data binding.
+
+Two way Data-Binding:-
+-> Two way Data binding is the synchronization between the model and the view.
+-> When data in the model changes, the view reflects the change, and when data in the view changes, the model is updated as well
+-> 'ng-model' is an angular directive used for achieving two-way data binding.
+
+EVENTS AND EVENT HANDLING:-
+What are Events:-
+-> Events are "things" that happend to HTML element.
+-> AngularJS can "react" on these events.
+-> Here are some examples of events:-
+   - An HTML web page has finished loading
+   - An HTML input field was changed
+   - An HTML button was clicked
+
+Mouse Events:-
+On Mouse click-
+-> ng-click
+-> ng-mousedown
+-> ng-mouseup
+-> ng-dblclick
+
+Mouse events occur when the cursor moves over an element, in this order-
+-> ng-mouseover
+-> ng-mouseenter
+-> ng-mousemove
+-> ng-mouseleave
+
+ng-focus and ng-blur directive:-
+-> The ng-focus directive tells AngularJS what to do when an HTML element gets focus.
+-> The ng-blur directive tells AngularJS what to do when an HTML element loses focus.
+
+KeyBoard Events:-
+-> ng-keydown
+-> ng-keypress
+-> ng-keyup
+
+Copy Paste Events:-
+Executes when do some cut copy paste oprration on input-
+-> ng-copy
+-> ng-cut
+-> ng-paste
+
+ng-change directive:-
+-> The ng-change directivetells angular what to do when the value of an HTML element changes like textbox, select, textarea.
+-> The ng-change directive requires a ng-model directive to be present.
+-> The ng-change event is triggered at every change in the value.It will not wait until all changes are made, or when the input field loses focus.
+-> The ng-change event is only triggered if there is a actual change in the input value, and not if tha change was made from a JavaScript.
+
+ng-repeat:-
+jo km hum array se data ko retrive krne ke liye hum JavaScript me foreach loop ka use krte the usi jagah pe hum AngularJS me hum ng-repeat ka use krte krte hain.
+-> The ng-repeat directive repeats a set of HTML, a given number of times.
+-> The set of HTML will be repeated once per item in a collection.
+-> The collection must be an array or an object.
+
+Filters:-
+-> filters can be added in angular to format data.
+-> They format the value of an expression for displaying to the end user.
+-> They are added to expressions by using the pipe character | , followed by a filter.
+-> Filters can be used in view templates as well as in controllers.
+-> We can use more than one filter in an expression.
+
+AngularJS Filters:-
+AngularJS provides filters to transform data.
+-> Lowercase - Format a string to lower case.
+-> Uppercase - Format a string to upper case.
+-> Number    - Format a number to a string.
+-> Currency  - Format a number to a Currency format.
+-> Date      - Format a date to a specified format.
+
+Date Filter:-
+The date fliter formats a date to a specified format.
+Formates for date filter:-
+-> "yyyy"  year(2023)
+-> "yy"  year(23)
+-> "y"  year(2022)
+
+-> "MMMM"  month(january)
+-> "MMM"  month(jan)
+-> "MM"  month(01)
+-> "M"  month(1)
+
+-> "dd"  day (08)
+-> "d"   day (8)
+-> "EEEE"  day (Tuesday)
+-> "EEE"  day (Tue)
+
+-> "HH"  hour, 00-23 (08)
+-> "H"   hour  0-23 (8)
+-> "hh"  hour in AM/PM, 00-12 (08)
+-> "h"  hour in AM/PM, 0-12 (9)
+
+-> "mm"  minute (05)
+-> "m"   minute (5)
+
+-> "ss"  second (05)
+-> "s"   second  (5)
+-> "sss"  millisecond (035)
+-> "a"   (AM/PM)
+
+Formats for date filter:-
+The format value can also be one of the following predefined format
+-> "short" same as "M/d/yy h:mm a" (1/5/16 9:05 AM)
+-> "medium" same as "MMM d,y h:mm:ss a" (jan 5, 2022 9:05:05 AM)
+-> "shortDate" same as "M/d/yy" (1/5/22)
+-> "mediumDate" same as "MMM d, y" (jan 5, 2022)
+-> "longDate" same as "MMMM d, y" (january 5, 2022)
+-> "fullDate" same as "EEE, MMMM d,y" (Tuesday, january 5, 2022)
+
+The format value can also be one of the following predefined formats:
+-> "shortTime" same as "h:mm a" (9:05 AM)
+-> "mediumTime" same as "h:mm:ss a" (9:05:05 AM)
+
+Order-By Filter:-
+It will provide sorting of arrays in ascending or descending order.
+
+Filter:-
+-> select a subset of items from an array.
+-> The "filter" Filter in AngularJS is used to filter the array and object elements and return the filtered items.
+-> In other words, this filter selects a subset (a smaller array containing elements that meet tha filter criteria) of an array from the original array.
+
+Limit-To Filter:-
+-> Limits an array/string, into a specified number of elements/characters.
+-> When the limitTo filter is used for arrays, it returns an array containing only the specified number of items.
+-> When the limitTo filter is used for strings, it returns a string containing, only the specified number of characters.
+-> When the limitTo filter is used for numbers, it returns a string containing only the specified number of digits.
+-> Use negative numbers to return elements starting from the end of the element, instead of the beginning.
+
+Ng-Show and Ng-Hide Directives:-
+ng-show:-
+-> The ng-show directive shows the specified HTML element if the expression evaluates to true, otherwise the HTML element is hidden.
+
+ng-hide:-
+->The ng-hide directive hides the html element if the expression evaluates to true.
+-> ng-hide is also a predefined CSS class in AngularJS, and sets the element's display to none.
+
+NG-INCLUDE DIRECTIVE:-
+-> The ng-include directive includes HTML from an external file.
+-> The included content will be included as child nodes for the specified element.
+-> By defalut, the included file must be located on the same domain as the document.
+
+Introduction to Services:-
+-> Services' refer to simple objects that does sort of work.
+-> A service in AngularJS is simple an object that provide some sort of service that can be reused with in an angularjs application.
+-> They are JavaScript functions and are responsible to do a specific task only.
+-> They are injected using Dependency injection mechanism of AngularJS.
+-> AngularJS has about 30 build-in services.
+
+Why do need services:-
+Single Responsibility principle-
+-> It states that an object should only have single Responsibility.
+
+Some build-in services provided by AngularJS are-
+-> $http
+-> $route
+-> $location
+-> $interval
+-> $window
+-> $timeout
+
+$location Services:-
+-> The $location service has methods which return information about the location of the current web page.
+-> Note that the $location service is passed in to the controller as an argument.
+-> In order to use the serice in the controller, it must be defined as a Dependency.
+
+$location Services-
+-> absUrl() it menas absoluteUrl
+-> Protocol()
+-> Host()
+-> Port()
+
+$interval Services:-
+-> The $interval service is AngularJS' version of the window.setInterval function.
+
+$timeout Services:-
+-> The $timeout service can be used to call another JavaScript function after a given time delay.
+-> The $timeout service only schedules a single call to the function.
+-> For repeated calling of a function, you can use $interval.
+
+$window Services:-
+-> AngularJS includes $window Service which refers to the browser window object.
+-> In the JavaScript, window is a global object which includes many built-in methods like alert(), prompt() etc.
+-> The $window Service is a wrapper around window object.
+
+Why use Services:-
+-> For many services, like the $location service, it seems like you could use objects that are already in the DOM, like the window.location object,
+   and you could, but it would have some limitations, at least for your AngularJS application.
+-> AngularJS constantly supervises your application, and for it to handle changes and events propertly, AngularJS prefers that you use the $location service instead of the
+   window.location object.
+
+Routing in AngularJS:-
+Routing Or Route:
+-> When creating single page application, Routing is very important.
+-> The ngRoute module helps our application to become a Single Page Application.
+-> It routes our application to different pages without reloading the entire application.
+
+-> To make our applications ready for routing, we must include the AngularJS ng-route module, in addition to angular.js.
+-> Ng-route provides the $routeProvider method.
+-> Using the $routeProvider, we can configure different routes in our application.
+
+What do I Need:-
+-> To make your application ready for routing, you must include the AngularJS Route Module.
+-> Now your application has access to the route module, which provides the $routeProvider.
+-> Use the $routeProvider to configure different routes in your application.
+
+where Does it Go:-
+-> Your application needs a container to put the content provided by the routing.
+-> This container is the ng-view directive.
+
+-> There are three different ways to include the ng-view directive in your application.
+
+-> 1. <div ng-view></div>
+
+-> 2. <ng-view></ng-view>
+
+-> 3. <div class="ng-view"></div>
+
+$routeProvider:-
+-> Define the $routeProvider using the config method of your application.
+-> Work registered in the config method will be performed when the application is loading/executing/running.
+
+TemplateUrl and template:-
+-> templateUrl returns the url of the html page.
+-> template return some template or combination of elements as a template.
+
+Creating Single Page Application:-
+
+SCOPE:-
+-> The scope of AngularJS is the model.
+-> It is a JavaScript object with properties and methods available for both the view and the controller.
+-> It gives the execution context for expressions used in the application.
+
+-> The scope is the binding part between the HTML (view) and the JavaScript (controller).
+-> The scope is an object with the available properties and methods.
+-> The scope is available for both the view and the controller.
+
+How to Use the Scope:-
+-> When you make a controller in AngularJS, you pass the $scope object as an argument.
+-> Syntax:-
+-> app.controller('myCtrl',function($scope) {
+    $scope.carname = "VolVo";
+});
+
+-> When adding properties to the $scope object in the controller, the view (HTML) gets access to these properties.
+
+Understanding the Scope:-
+-> If we consider an AngularJS application to consist of:
+-> View, which is the HTML.
+-> Model, which is the data available for the current view.
+-> Controller, which is the JavaScript function that makes/changes/removes/controls the data.
+-> The $scope is glue between a controller and view (HTML). It transfers data from the controller to view and vice-versa.
+-> As we have seen in the controller section, we can attach properties and methods to the $scope object inside controller function.
+-> The view can display $scope data using an expression, ng-model, or ng-bind directive.
+
+The three types of scopes are:-
+-> Isolated scope
+-> Shared scope
+-> Inherited scope
+
+Root Scope:-
+-> All applications have a $rootScope which is the scope created on the HTML element that contains the ng-app directive.
+-> The rootScope is available in the entire application.
+-> If a variable has the same name in both the current scope and in the rootScope, the application uses the one in the current scope.
+
+
+
+
+
+Link of Document :- https://www.w3schools.com/angular/default.asp
+Link of You Tube :- https://www.youtube.com/playlist?list=PLX07l0qxoHFKBM-5v_l3qltLHLix3vBum
+Link of You Tube :- https://www.youtube.com/playlist?list=PLvZkOAgBYrsS_ugyamsNpCgLSmtIXZGiz

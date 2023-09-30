@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="Module.js"></script>
+</head>
+<body ng-controller="myController">
+    
+      <!-- <h2>{{ name }}</h2> -->
+
+      <!-- <h2 ng-bind="name"></h2> -->
+
+      <!-- Isolated scope -->
+      <!-- <div ng-controller="ctr1">
+        <h2>{{ name }}</h2>
+      </div>
+
+      <br>
+
+      <div ng-controller="ctr2">
+        <h2>{{ name }}</h2>
+      </div> -->
+
+
+      <!-- Shared scope -->
+      <!-- <div ng-controller="ctr1">
+        <h2>{{ name }}</h2>
+        <h2>{{ name1 }}</h2>
+      </div>
+
+      <br>
+
+      <div ng-controller="ctr2">
+        <h2>{{ name }}</h2>
+        <h2>{{ name1 }}</h2>
+      </div> -->
+
+
+      <!-- Inherited scope -->
+      <!-- parent ctr1 -->
+      <!-- <div ng-controller="ctr1"> -->
+        <!-- child ctr2 -->
+        <!-- <div ng-controller="ctr2">
+            <h2>{{ name2 }}</h2>
+            <h2>{{ name3 }}</h2>
+        </div>
+      </div> -->
+
+      <div ng-controller="ctr1">
+        <div ng-controller="ctr2">
+            <div ng-controller="ctr3">
+                <h2>{{ name2 }}</h2>
+                <h2>{{ name3 }}</h2>
+                <h2>{{ name4 }}</h2>
+            </div>
+        </div>
+      </div>
+      
+
+</body>
+</html>

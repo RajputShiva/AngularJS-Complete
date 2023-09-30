@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="Module.js"></script>
+</head>
+<body ng-controller="myController">
+    
+    <!-- <h2>{{ name | lowercase }}</h2> -->
+    <!-- <h2>{{ name | uppercase }}</h2> -->
+    <!-- <h2>{{ amount }}</h2> -->
+    <!-- <h2>{{ amount | number }}</h2> -->
+    <!-- decima use krne ke liye -->
+    <!-- <h2>{{ amount | number:2 }}</h2> -->
+    <!-- <h2>{{ amount | currency }}</h2> -->
+    <!-- symbol doler me nhi dena chahte h kisi aur me dene ke liye use krte hain -->
+    <!-- <h2>{{ amount | currency:"&euro;" }}</h2> -->
+    <!-- <h3>&copy;</h3>
+    <h3>&#8377;</h3> -->
+
+    <!-- Date Filter -->
+    <!-- <h2>{{ mydate }}</h2> -->
+    <!-- <h2>{{ mydate | date }}</h2> -->
+
+    <!-- Year filter -->
+    <!-- <h2>{{ mydate | date:"yyyy" }}</h2> -->
+
+    <!-- Month filter -->
+    <!-- <h2>{{ mydate | date:"MMMM" }}</h2> -->
+    <!-- <h2>{{ mydate | date:"MMM" }}</h2> -->
+    <!-- <h2>{{ mydate | date:"MM" }}</h2> -->
+
+    <!-- Date Filter -->
+    <!-- <h2>{{ mydate | date:"dd" }}</h2> -->
+    <!-- <h2>{{ mydate | date:"d" }}</h2> -->
+    <!-- <h2>{{ mydate | date:"EEEE" }}</h2> -->
+    <!-- <h2>{{ mydate | date:"EEE" }}</h2> -->
+
+    <!-- khud ka format -->
+    <!-- <h2>{{ mydate | date:"dd/MM/y" }}</h2> -->
+    <!-- <h2>{{ mydate | date:"dd-MM-y" }}</h2 -->
+
+    <!-- Hour -->
+    <!-- <h2>{{ mydate | date:"HH" }}</h2 -->
+    <!-- <h2>{{ mydate | date:"hh" }}</h2 -->
+    <!-- <h2>{{ mydate | date:"h" }}</h2 -->
+
+    <!-- Minute -->
+    <!-- <h2>{{ mydate | date:"mm" }}</h2 -->
+    
+    <!-- Second -->
+    <!-- <h2>{{ mydate | date:"ss" }}</h2 -->
+    <!-- <h2>{{ mydate | date:"s" }}</h2 -->
+    <!-- <h2>{{ mydate | date:"sss" }}</h2 -->
+    <!-- <h2>{{ mydate | date:"a" }}</h2 -->
+
+    <!-- khud ka format -->
+    <!-- <h2>{{ mydate | date:"hh/mm/ss a" }}</h2> -->
+    <!-- <h2>{{ mydate | date:"hh:mm:ss a" }}</h2> -->
+    <h2>{{ mydate | date:"short" }}</h2>
+</body>
+</html>

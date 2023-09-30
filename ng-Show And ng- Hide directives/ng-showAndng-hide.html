@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="Module.js"></script>
+</head>
+<body ng-controller="myController">
+    
+    <!-- <p><input type="checkbox" ng-model="check">Show</p>
+    <div ng-show = "check">
+        <h1>This is a Div</h1>
+        <h2>This is second Div</h2>
+    </div> -->
+
+    <!-- <p><input type="checkbox" ng-model="check">Hide</p>
+    <div ng-hide = "check">
+        <h1>This is a Div</h1>
+        <h2>This is second Div</h2>
+    </div> -->
+
+    <p><input type="checkbox" ng-model="check">Hide Salary</p>
+
+    <table border="1">
+       <thead>
+        <tr>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th>AGE</th>
+            <th ng-hide="check">SALARY</th>
+            <th ng-show="check">SALARY</th>
+
+        </tr>
+       </thead>
+       <tbody>
+        <tr ng-repeat="emp in employees">
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.designation }}</td>
+            <td>{{ emp.age }}</td>
+            <td ng-hide="check">{{ emp.Salary }}</td>
+            <td ng-show="check"> ***** </td>
+        </tr>
+       </tbody>
+    </table>
+
+</body>
+</html>

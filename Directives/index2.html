@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- create variable by ng-init -->
+     <!-- <div ng-init="name ='Shivaji Singh'; age=27"> -->
+        <!-- <h2>{{ name }}</h2> -->
+        <!-- <h2 ng-bind="name"></h2>
+        <h2 ng-bind="age"></h2>
+    </div> -->
+
+    <!--create array by ng-init -->
+    <div ng-init="colors=['red','orange','green','blue']">
+        <!-- <h2 ng-bind="colors[2]"></h2> -->
+        <!-- <h2>{{ colors[1] }}</h2> -->
+    </div>
+
+    <!--create object by ng-init -->
+    <div ng-init="obj={FirstName:'Shivaji',LastName:'Singh',age:27,height:6.02}">
+        <!-- <h2>{{ obj.FirstName }}</h2>
+        <h2>{{ obj.LastName }}</h2>
+        <h2>{{ obj.age }}</h2> -->
+        <!-- <h2>{{ obj.height }}</h2> -->
+        <!-- <h2 ng-bind="obj.height"></h2> -->
+    </div>
+
+    <!--create array of objects by ng-init -->
+   <!-- <div ng-init="students=[
+       {name:'Shivaji Singh',class:12,gender:'Male'},
+       {name:'Golu Singh',class:10,gender:'Male'},
+       {name:'Shivani Singh',class:8,gender:'Female'}
+    ]">
+
+    <h2>{{ students[0].name }}</h2>
+    <h2 ng-bind="students[0].class"></h2>
+    <h2 ng-bind="students[0].gender"></h2>
+
+    <h2>{{ students[1].name }}</h2>
+    <h2 ng-bind="students[1].class"></h2>
+    <h2 ng-bind="students[1].gender"></h2>
+
+    <h2>{{ students[2].name }}</h2>
+    <h2>{{ students[2].class }}</h2>
+    <h2>{{ students[2].genger }}</h2>
+   </div> -->
+
+   <div ng-init="quantity=1; price=5">
+    Quantity: <input type="number" ng-model="quantity">
+    <br><br>
+    Price: <input type="number" ng-model="price">
+    <br><br>
+    Total Amount is : {{ quantity * price }}
+
+   </div>
+</body>
+</html>
